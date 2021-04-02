@@ -5,3 +5,5 @@ contact = {
 }
 #Your code here:
 
+for x in contact:
+    print(x + ' : ' + contact[x])
