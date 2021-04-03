@@ -9,4 +9,21 @@ all_colors = [
 ]
 
 #Your code go here:
+def generate_li(arr):
+    tagLi = ""
+    for color in arr:
+        tagLi += "<li>" + color["label"] + "</li>"
 
+    return tagLi 
+
+
+
+def filter_colors(color):
+    return color['sexy']== True
+
+
+sexyColorList = list(filter(filter_colors, all_colors))
+liList = generate_li(sexyColorList)
+
+
+print(liList)

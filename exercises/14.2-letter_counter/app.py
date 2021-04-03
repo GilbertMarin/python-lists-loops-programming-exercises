@@ -2,6 +2,12 @@ par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget bib
 
 counts = {}
 #your code go here:
+lowerPar = par.lower()
+for char in lowerPar:
+        if char != " ":
+            if char in counts:
+                counts[char] += 1
+            else:
+                counts[char] = 1
 
 print(counts)
-

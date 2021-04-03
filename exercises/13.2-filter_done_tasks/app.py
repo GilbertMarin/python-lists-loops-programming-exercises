@@ -12,4 +12,11 @@ tasks = [
 
 
 #Your code go here:
+def endingTasks(task):
+    for x in task:
+        if (task['done']==True):
+            return x
+
+finishedTasks = list(filter(endingTasks, tasks))
+print(finishedTasks)
 

@@ -7,3 +7,8 @@ names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan
 
 
 #Your code go here:
+def findingText(lists):
+    return 'am' in lists
+
+lettersNames = list(filter(findingText, names))
+print(lettersNames)    
